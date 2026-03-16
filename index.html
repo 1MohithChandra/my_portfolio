@@ -1,1 +1,143 @@
-indexhml
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohith Chandra | AIML Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Inter:wght@300;400;600;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="bg-vibe">
+        <div class="blob purple"></div>
+        <div class="blob orange"></div>
+    </div>
+
+    <nav>
+        <div class="nav-container">
+            <div class="logo">mohith<span>.</span></div>
+            <ul class="nav-menu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#roadmap">Roadmap</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#work">Achievement</a></li>
+                <li><a href="#contact" class="nav-btn">CONNECT</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header id="hero">
+        <div class="hero-wrapper">
+            <div class="profile-frame">
+                <img src="mohith.png" alt="Mohith Chandra" class="hero-img">
+            </div>
+            <h1 class="hero-title">Mohith <span class="highlight">Chandra</span></h1>
+            <p class="tagline">B.Sc. AIML Student @ Kristu Jayanti University</p>
+            <div class="social-links">
+                <a href="https://github.com/1MohithChandra" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/mohith-chandra-65115721b/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <section id="roadmap" class="roadmap-section">
+        <h2 class="section-label">AI Mastery Pathway</h2>
+        <div class="roadmap-grid">
+            <div class="roadmap-card" data-tilt>
+                <div class="step-num">01</div>
+                <h3>Foundations</h3>
+                <p>Math logic, Linear Algebra, and Discrete Mathematics at KJU.</p>
+                <div class="status done">COMPLETED</div>
+            </div>
+            <div class="roadmap-card active-step" data-tilt>
+                <div class="step-num">02</div>
+                <h3>Data Architecture</h3>
+                <p>Mastering RDBMS, SQL, and NoSQL (MongoDB) data structures.</p>
+                <div class="status current">IN PROGRESS</div>
+            </div>
+            <div class="roadmap-card" data-tilt>
+                <div class="step-num">03</div>
+                <h3>ML Algorithms</h3>
+                <p>Supervised and Unsupervised learning with Scikit-learn.</p>
+                <div class="status future">UPCOMING</div>
+            </div>
+            <div class="roadmap-card" data-tilt>
+                <div class="step-num">04</div>
+                <h3>Deep Learning</h3>
+                <p>Neural Networks, NLP, and Sakhā AI deployment.</p>
+                <div class="status future">UPCOMING</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2 class="section-label">Interactive Tech Stack</h2>
+        <div class="tools-grid-js">
+            <a href="https://code.visualstudio.com/" target="_blank" class="tool-card-js" data-tilt>
+                <i class="fas fa-code"></i>
+                <h4>VS Code</h4>
+                <p>Primary Editor</p>
+            </a>
+            <a href="https://posit.co/download/rstudio-desktop/" target="_blank" class="tool-card-js" data-tilt>
+                <i class="fas fa-chart-line"></i>
+                <h4>R Studio</h4>
+                <p>Data & Statistics</p>
+            </a>
+            <a href="https://www.mysql.com/" target="_blank" class="tool-card-js" data-tilt>
+                <i class="fas fa-database"></i>
+                <h4>SQL / RDBMS</h4>
+                <p>Database Mastery</p>
+            </a>
+            <a href="https://git-scm.com/" target="_blank" class="tool-card-js" data-tilt>
+                <i class="fab fa-git-alt"></i>
+                <h4>Git / GitHub</h4>
+                <p>Version Control</p>
+            </a>
+        </div>
+    </section>
+
+    <section id="work" class="work-section">
+        <h2 class="section-label">Major Achievement</h2>
+        <div class="work-card">
+            <div class="work-img-box">
+                <img src="trophy.jpg" alt="1st Prize Trophy">
+            </div>
+            <div class="work-info">
+                <span class="badge">1ST PLACE WINNER</span>
+                <h3>Code Swing Competition</h3>
+                <p>Champions at the domain-specific IT Fest, Kristu Jayanti University.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 class="section-label">Stay Connected</h2>
+        <div class="contact-container glass">
+            <form class="contact-form">
+                <div class="input-row">
+                    <input type="text" placeholder="Full Name" required>
+                    <input type="email" placeholder="Email Address" required>
+                </div>
+                <textarea placeholder="Tell me about your project..." rows="5" required></textarea>
+                <button type="submit" class="submit-btn">Send Message <i class="fas fa-paper-plane"></i></button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Mohith Chandra | Bengaluru, India</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>
